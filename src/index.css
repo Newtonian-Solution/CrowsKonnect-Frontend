@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+@font-face {
+    font-family: 'Groteska-Bold';
+    src: url('../public/fonts/Groteska-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-BoldItalic';
+    src: url('../public/fonts/Groteska-BoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Book';
+    src: url('../public/fonts/Groteska-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-BookItalic';
+    src: url('../public/fonts/Groteska-BookItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Heavy';
+    src: url('../public/fonts/Groteska-Heavy.otf') format('opentype');
+    font-weight: 900; /* Adjust the weight based on the font */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-HeavyItalic';
+    src: url('../public/fonts/Groteska-HeavyItalic.otf') format('opentype');
+    font-weight: 900; /* Adjust the weight based on the font */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Italic';
+    src: url('../public/fonts/Groteska-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Light';
+    src: url('../public/fonts/Groteska-Light.otf') format('opentype');
+    font-weight: 400; /* Adjust the weight based on the font */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-LightItalic';
+    src: url('../public/fonts/Groteska-LightItalic.otf') format('opentype');
+    font-weight: 300; /* Adjust the weight based on the font */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Medium';
+    src: url('../public/fonts/Groteska-Medium.otf') format('opentype');
+    font-weight: 500; /* Adjust the weight based on the font */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-MediumItalic';
+    src: url('../public/fonts/Groteska-MediumItalic.otf') format('opentype');
+    font-weight: 500; /* Adjust the weight based on the font */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Regular';
+    src: url('../public/fonts/Groteska-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-Thin';
+    src: url('../public/fonts/Groteska-Thin.otf') format('opentype');
+    font-weight: 100; /* Adjust the weight based on the font */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Groteska-ThinItalic';
+    src: url('../public/fonts/Groteska-ThinItalic.otf') format('opentype');
+    font-weight: 100; /* Adjust the weight based on the font */
+    font-style: italic;
+  }
+  .custom-shape-divider-top-1694624126 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1694624126 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1694624126 .shape-fill {
+    fill: #FFFFFF;
+}
+.custom-shape-divider-bottom-1694698959 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1694698959 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1694698959 .shape-fill {
+  fill: #FFFFFF;
+}
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 1.5rem;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+}
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  transition: all 0.2s;
+}
+.navigation__icon::before {
+  top: -0.4rem;
+}
+.navigation__icon::after {
+  top: 0.4rem;
+}
+.navigation__button:hover .navigation__icon::before {
+  top: -0.45rem;
+}
+.navigation__button:hover .navigation__icon::after {
+  top: 0.45rem;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon:after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.navigation__checkbox:checked + .navigation__button .navigation__icon:before {
+  top: 0;
+  transform: rotate(135deg);
+}
