@@ -1,33 +1,37 @@
 import Logo from "../../assets/logo.svg";
 import {useState} from 'react'
-
+import { Link } from "react-router-dom";
 const Nav: React.FC = () => {
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(false);
+
+    function handleCheck() {
+      setChecked(false)
+    }
   return (
-    <header className="flex justify-between py-10 sm:px-20 px-6 relative h-[5rem] mb-10">
+    <header className="flex justify-between py-10 sm:px-20 px-6  h-[5rem] mb-10">
       <div className="sm:h-[100px] sm:w-[100px] h-[60px] w-[60px]">
         <img src={Logo} alt="" height="100%" width="100%" />
       </div>
       <ul className="hidden sm:flex gap-4 text-lg">
         <li>
-          <a href="/" className="hover:text-darkGreen">
+          <Link to="/" className="hover:text-darkGreen" >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className="hover:text-darkGreen">
+          <Link to="" className="hover:text-darkGreen">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className="hover:text-darkGreen">
+          <Link to="" className="hover:text-darkGreen">
             Contact
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/terms-of-service"className="hover:text-darkGreen">
+          <Link to="/terms-of-service"className="hover:text-darkGreen">
             Terms of Service
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="nav__icon sm:hidden sm:invisible block visible">
@@ -44,24 +48,24 @@ const Nav: React.FC = () => {
           </div>
       <ul className={`flex flex-col gap-4 text-lg fixed z-10 bg-white right-0 h-screen px-10 py-32 top-0 transform transition-transform duration-300 ${checked ? "translate-x-0" : 'translate-x-full'}`}>
         <li>
-          <a href="/" className="hover:text-darkGreen">
+          <Link to="/" className="hover:text-darkGreen" onClick={handleCheck}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className="hover:text-darkGreen">
+          <Link to="" className="hover:text-darkGreen" onClick={handleCheck}>
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="" className="hover:text-darkGreen">
+          <Link to="" className="hover:text-darkGreen" onClick={handleCheck}>
             Contact
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/terms-of-service" className="hover:text-darkGreen">
+          <Link to="/terms-of-service" className="hover:text-darkGreen" onClick={handleCheck}>
             Terms of Service
-          </a>
+          </Link>
         </li>
       </ul>
       

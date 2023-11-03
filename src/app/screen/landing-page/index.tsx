@@ -48,7 +48,7 @@ const LandingPage: React.FC = () => {
           What we do
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-3 justify-center gap-10 xl:gap-20 mt-10 px-10 sm:px-20">
-          <div className="flex flex-col gap-4 text-center items-center p-4 xl:p-6 shadow-lg h-[30rem] rounded-md">
+          <div className="flex flex-col gap-4  items-center p-4 xl:p-6 shadow-lg h-[30rem] rounded-md">
             <img src={Fast} alt="" height="200px" width="200px" />
             <h3 className="xl:text-2xl text-lg font-groteska-medium inline-block">
               Efficient Package Delivery
@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
               deliveries, so you can rely on us for all your shipping needs.
             </p>
           </div>
-          <div className="flex flex-col gap-4 text-center items-center p-4 xl:p-6 shadow-lg h-[30rem] rounded-md">
+          <div className="flex flex-col gap-4 items-center p-4 xl:p-6 shadow-lg h-[30rem] rounded-md">
             <img src={Wide} alt="" height="200px" width="200px" />
             <h3 className="xl:text-2xl text-lg font-groteska-medium inline-block">
               Sender-Centric Approach
@@ -72,7 +72,7 @@ const LandingPage: React.FC = () => {
               all about simplicity, convenience, and peace of mind.
             </p>
           </div>
-          <div className="flex flex-col gap-4 text-center items-center p-4 xl:p-6 shadow-lg h-[30rem] rounded-md">
+          <div className="flex flex-col gap-4  items-center p-4 xl:p-6 shadow-lg h-[30rem] rounded-md">
             <img src={Safety} alt="" height="300px" width="300px" />
             <h3 className="xl:text-2xl text-lg font-groteska-medium inline-block">
               Empowering Local Couriers
